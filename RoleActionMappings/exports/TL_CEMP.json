@@ -1,0 +1,457 @@
+[
+    {
+        "id": 1551,
+        "url": "/pt-calculator-v2/billingslab/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1552,
+        "url": "/pt-calculator-v2/billingslab/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1556,
+        "url": "url",
+        "nav_url": "/"
+    },
+    {
+        "id": 1566,
+        "url": "/pt-calculator-v2/propertytax/_estimate",
+        "nav_url": ""
+    },
+    {
+        "id": 1568,
+        "url": "/pt-calculator-v2/propertytax/_getbill",
+        "nav_url": ""
+    },
+    {
+        "id": 1574,
+        "url": "/pt-calculator-v2/billingslab/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 1589,
+        "url": "/collection-services/receipts/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1590,
+        "url": "/collection-services/receipts/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1592,
+        "url": "url",
+        "nav_url": "report/rainmaker-pgr/EmployeeReport"
+    },
+    {
+        "id": 2127,
+        "url": "/egov-pdf/download/PAYMENT/property-receipt",
+        "nav_url": ""
+    },
+    {
+        "id": 2128,
+        "url": "/egov-searcher/locality/property-services/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 2129,
+        "url": "/egov-pdf/download/PAYMENT/tradelicense-receipt",
+        "nav_url": ""
+    },
+    {
+        "id": 605,
+        "url": "/user/users/_createnovalidate",
+        "nav_url": ""
+    },
+    {
+        "id": 2155,
+        "url": "/inbox/v1/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 2156,
+        "url": "/egov-workflow-v2/egov-wf/escalate/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 2163,
+        "url": "url",
+        "nav_url": "report/pt-reports/PTReceiptRegister"
+    },
+    {
+        "id": 2164,
+        "url": "/report/pt-reports/PTReceiptRegister/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 2165,
+        "url": "/report/pt-reports/PTReceiptRegister/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 2166,
+        "url": "url",
+        "nav_url": "report/pt-reports/PTCollectionReport"
+    },
+    {
+        "id": 2167,
+        "url": "/report/pt-reports/PTCollectionReport/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 2168,
+        "url": "/report/pt-reports/PTCollectionReport/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 2172,
+        "url": "/egov-searcher/property-services/inboxpropertysearch/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1684,
+        "url": "/tl-calculator/billingslab/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1685,
+        "url": "/tl-services/v1/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1686,
+        "url": "/tl-services/v1/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 1687,
+        "url": "/tl-services/v1/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1688,
+        "url": "/tl-calculator/v1/_getbill",
+        "nav_url": ""
+    },
+    {
+        "id": 1689,
+        "url": "/services/EGF/rest/voucher/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1690,
+        "url": "url",
+        "nav_url": "/digit-ui/employee/tl/inbox"
+    },
+    {
+        "id": 698,
+        "url": "/user/profile/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 699,
+        "url": "/user/password/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 701,
+        "url": "/user/_logout",
+        "nav_url": ""
+    },
+    {
+        "id": 1730,
+        "url": "/egov-workflow-v2/egov-wf/process/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1743,
+        "url": "/egov-workflow-v2/egov-wf/businessservice/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1752,
+        "url": "/egov-hrms/employees/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1766,
+        "url": "",
+        "nav_url": ""
+    },
+    {
+        "id": 1776,
+        "url": "card",
+        "nav_url": "/digit-ui/employee/pt/inbox"
+    },
+    {
+        "id": 1778,
+        "url": "card",
+        "nav_url": "/digit-ui/employee/tl/inbox"
+    },
+    {
+        "id": 2315,
+        "url": "/property-services/property/_addAlternateNumber",
+        "nav_url": ""
+    },
+    {
+        "id": 2317,
+        "url": "/filestore/v1/files",
+        "nav_url": ""
+    },
+    {
+        "id": 1841,
+        "url": "url",
+        "nav_url": "/digit-ui/employee/tl/new-application"
+    },
+    {
+        "id": 1846,
+        "url": "/report/rainmaker-pgr/EmployeeReport/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1847,
+        "url": "/report/rainmaker-pgr/EmployeeReport/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1863,
+        "url": "/collection-services/payments/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1875,
+        "url": "/tl-services/v1/BPAREG/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1876,
+        "url": "/tl-services/v1/BPAREG/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 1877,
+        "url": "/tl-services/v1/BPAREG/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1878,
+        "url": "/tl-calculator/v1/BPAREG/_getbill",
+        "nav_url": ""
+    },
+    {
+        "id": 1879,
+        "url": "url",
+        "nav_url": "bpastakeholder/search"
+    },
+    {
+        "id": 870,
+        "url": "/access/v1/actions/mdms/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1895,
+        "url": "/property-services/property/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1896,
+        "url": "/property-services/property/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 1897,
+        "url": "/property-services/property/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1898,
+        "url": "/property-services/property/_cancel",
+        "nav_url": ""
+    },
+    {
+        "id": 1902,
+        "url": "/report/rainmaker-tl/StateLevelStatus/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1903,
+        "url": "/report/rainmaker-tl/StateLevelTradeWiseCollection/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1904,
+        "url": "/report/rainmaker-tl/StateLevelTradeLicenseRegistryReport/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1906,
+        "url": "/report/rainmaker-tl/TradeWiseCollectionReport/metadata/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1912,
+        "url": "/report/rainmaker-tl/StateLevelStatus/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1913,
+        "url": "/report/rainmaker-tl/StateLevelTradeWiseCollection/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1914,
+        "url": "/report/rainmaker-tl/StateLevelTradeLicenseRegistryReport/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1916,
+        "url": "/report/rainmaker-tl/TradeWiseCollectionReport/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1928,
+        "url": "quickAction",
+        "nav_url": "/digit-ui/employee/tl/inbox"
+    },
+    {
+        "id": 1929,
+        "url": "quickAction",
+        "nav_url": "/digit-ui/employee/tl/new-application"
+    },
+    {
+        "id": 1933,
+        "url": "/egov-searcher/locality/tl-services/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1429,
+        "url": "/egov-location/location/v11/boundarys/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1943,
+        "url": "/property-services/assessment/_create",
+        "nav_url": ""
+    },
+    {
+        "id": 1944,
+        "url": "/property-services/assessment/_update",
+        "nav_url": ""
+    },
+    {
+        "id": 1945,
+        "url": "/property-services/assessment/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1955,
+        "url": "/pt-calculator-v2/billingslab/mutation/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1957,
+        "url": "/pt-calculator-v2/propertytax/mutation/_calculate",
+        "nav_url": ""
+    },
+    {
+        "id": 1962,
+        "url": "/pt-calculator-v2/propertytax/v2/_estimate",
+        "nav_url": ""
+    },
+    {
+        "id": 1969,
+        "url": "/egov-searcher/locality/pt-services/_get",
+        "nav_url": ""
+    },
+    {
+        "id": 1991,
+        "url": "/egov-pdf/download/PAYMENT/consolidatedreceipt",
+        "nav_url": ""
+    },
+    {
+        "id": 1992,
+        "url": "/egov-pdf/download/BILL/consolidatedbill",
+        "nav_url": ""
+    },
+    {
+        "id": 1993,
+        "url": "/egov-pdf/download/TL/tlreceipt",
+        "nav_url": ""
+    },
+    {
+        "id": 1994,
+        "url": "/egov-pdf/download/TL/tlcertificate",
+        "nav_url": ""
+    },
+    {
+        "id": 1995,
+        "url": "/egov-pdf/download/TL/tlrenewalcertificate",
+        "nav_url": ""
+    },
+    {
+        "id": 1996,
+        "url": "/egov-pdf/download/TL/tlbill",
+        "nav_url": ""
+    },
+    {
+        "id": 1997,
+        "url": "/egov-pdf/download/PT/ptmutationcertificate",
+        "nav_url": ""
+    },
+    {
+        "id": 1998,
+        "url": "/egov-pdf/download/PT/ptbill",
+        "nav_url": ""
+    },
+    {
+        "id": 1999,
+        "url": "/egov-pdf/download/PT/ptreceipt",
+        "nav_url": ""
+    },
+    {
+        "id": 2027,
+        "url": "/egov-workflow-v2/egov-wf/process/_count",
+        "nav_url": ""
+    },
+    {
+        "id": 2028,
+        "url": "/collection-services/payments/PT/_workflow",
+        "nav_url": ""
+    },
+    {
+        "id": 2029,
+        "url": "/collection-services/payments/PT/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 2030,
+        "url": "url",
+        "nav_url": "receipts/search"
+    },
+    {
+        "id": 2031,
+        "url": "card",
+        "nav_url": "receipts/search"
+    },
+    {
+        "id": 2033,
+        "url": "/collection-services/payments/PT.MUTATION/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1522,
+        "url": "/egov-location/location/v11/geography/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 1523,
+        "url": "/egov-location/location/v11/tenant/_search",
+        "nav_url": ""
+    },
+    {
+        "id": 2034,
+        "url": "/collection-services/payments/TL/_search",
+        "nav_url": ""
+    }
+]
