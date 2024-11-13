@@ -1,0 +1,36 @@
+{
+    "rainmaker-pt": [
+        {
+            "code": "PT_ACK_LOCALIZATION_HOUSE_DOOR_NO",
+            "message": "House Number:",
+            "module": "rainmaker-pt",
+            "locale": "en_IN"
+        },
+        {
+            "code": "PT_COMMON_DOOR_NO_LABEL",
+            "message": "House Number",
+            "module": "rainmaker-pt",
+            "locale": "en_IN"
+        },
+        {
+            "code": "PT_COMMON_SEARCH_DOOR_NO_PLACEHOLDER",
+            "message": "Enter House Number",
+            "module": "rainmaker-pt",
+            "locale": "en_IN"
+        },
+        {
+            "code": "PT_HOUSE_DOOR_NO",
+            "message": "House Number",
+            "module": "rainmaker-pt",
+            "locale": "en_IN"
+        }
+    ],
+    "rainmaker-common": [
+        {
+            "code": "PT_ACK_LOCALIZATION_HOUSE_DOOR_NO",
+            "message": "House Number:",
+            "module": "rainmaker-common",
+            "locale": "en_IN"
+        }
+    ]
+}
