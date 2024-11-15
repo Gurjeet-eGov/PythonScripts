@@ -1,0 +1,18 @@
+{
+    "rainmaker-pt": [
+        {
+            "code": "PT_undefined",
+            "message": "Undefined",
+            "module": "rainmaker-pt",
+            "locale": "en_IN"
+        }
+    ],
+    "rainmaker-ws": [
+        {
+            "code": "WS_APPLICATION_TYPE_undefined",
+            "message": "Undefined",
+            "module": "rainmaker-ws",
+            "locale": "en_IN"
+        }
+    ]
+}

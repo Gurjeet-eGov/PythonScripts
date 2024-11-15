@@ -1,17 +1,15 @@
 import json
 import requests
+import os
 
-# Endpoint URL
+# Directory containing JSON files
+directory = "FilterLocalisations"
 url = "http://localhost:8082/localization/messages/v1/_upsert"
 
 # Headers for the request
 headers = {
     "Content-Type": "application/json"
 }
-
-# Load grouped results from the JSON file
-with open("grouped_results.json", "r") as file:
-    grouped_results = json.load(file)
 
 # Request info template
 request_info = {
@@ -32,6 +30,20 @@ request_info = {
 
 # Tenant ID
 tenant_id = "ca"
+
+# List JSON files in the directory
+json_files = [f for f in os.listdir(directory) if f.endswith('.json')]
+print("Available JSON files:")
+for idx, file_name in enumerate(json_files):
+    print(f"{idx + 1}. {file_name}")
+
+# Prompt the user to choose a file
+file_index = int(input("Enter the number of the file you want to use: ")) - 1
+file_name = os.path.join(directory, json_files[file_index])
+
+# Load grouped results from the chosen JSON file
+with open(file_name, "r") as file:
+    grouped_results = json.load(file)
 
 # Iterate over each module in grouped results and send a request
 for module, messages in grouped_results.items():
