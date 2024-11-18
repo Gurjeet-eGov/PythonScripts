@@ -5,7 +5,7 @@ from collections import defaultdict
 # Define URL and file paths
 url = "http://localhost:8082/localization/messages/v1/_search?locale=en_IN&tenantId=ca"
 localisation_file = "FilterLocalisations/localisations.json"
-keyword = "undefined"
+keyword = "Bottom 3 performing states"
 
 # Function to fetch localization messages
 def fetchMessages():

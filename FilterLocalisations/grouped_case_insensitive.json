@@ -1,17 +1,105 @@
 {
-    "rainmaker-pt": [
+    "rainmaker-dss": [
         {
-            "code": "PT_undefined",
-            "message": "Undefined",
-            "module": "rainmaker-pt",
+            "code": "BELOW_THE_TOP",
+            "message": "Below the top 3 / bottom 3 performing states cards...",
+            "module": "rainmaker-dss",
             "locale": "en_IN"
-        }
-    ],
-    "rainmaker-ws": [
+        },
         {
-            "code": "WS_APPLICATION_TYPE_undefined",
-            "message": "Undefined",
-            "module": "rainmaker-ws",
+            "code": "NATIONAL_DSS_BOTTOM_3_PERFORMING_STATES_COMPLETION_RATE",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NATIONAL_DSS_BOTTOM_3_PERFORMING_STATES_TARGET_ACHIEVEMENT",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NATIONAL_DSS_BOTTOM_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NATIONAL_DSS_PT_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NATIONAL_DSS_PT_BOTTOM_3_PERFORMING_STATES_COMPLETION_RATE",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NATIONAL_DSS_PT_BOTTOM_3_PERFORMING_STATES_TARGET_ACHIEVEMENT",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NSS_NOC_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NSS_OBPS_BOTTOM_3_PERFORMING_ULBS",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "NSS_WS_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_DSS_NOC_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_DSS_TL_BOTTOM_3_PERFORMING_ULBS",
+            "message": "Bottom 3 performing states",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NATIONAL_DSS_BOTTOM_PERFORMING_STATES",
+            "message": "Bottom 3 performing states",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NATIONAL_DSS_PT_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 performing states",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NSS_NOC_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NSS_OBPS_BOTTOM_3_PERFORMING_ULBS",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NSS_WS_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 Performing States",
+            "module": "rainmaker-dss",
             "locale": "en_IN"
         }
     ]
