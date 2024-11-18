@@ -1,1 +1,22 @@
-{}
+{
+    "rainmaker-dss": [
+        {
+            "code": "TIP_DSS_TL_BOTTOM_3_PERFORMING_ULBS",
+            "message": "Bottom 3 performing states",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NATIONAL_DSS_BOTTOM_PERFORMING_STATES",
+            "message": "Bottom 3 performing states",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        },
+        {
+            "code": "TIP_NATIONAL_DSS_PT_BOTTOM_3_PERFORMING_STATES",
+            "message": "Bottom 3 performing states",
+            "module": "rainmaker-dss",
+            "locale": "en_IN"
+        }
+    ]
+}

@@ -13,27 +13,30 @@ def log_response(response):
     """Log response for debugging."""
     print(f"URL: {response.url}")
     print(f"Status Code: {response.status_code}")
-    print(f"Response: {response.json()}")
+    print(f"Response: {response.json()}"+"\n")
 
-def generate_RequestInfo():
-    from dataclasses import dataclass, field
-    from typing import Optional, Dict
+def generate_RequestInfo(authToken, userReqInfo):
+    from dataclasses import dataclass, field, asdict
+    from typing import Dict
 
     @dataclass
-    class APIRequest:
-        apiId: str
+    class ReqInfo:
         authToken: str
-        userInfo: dict = field(default_factory=dict)
-        msgId: Optional[str] = None
+        apiId: str = ""
+        ver: str = ".01"
+        ts: str = ""
+        action: str = "_create"
+        did: str = "1"
+        key: str = ""
+        msgId: str = "20170310130900|en_IN"
+        userInfo: Dict = field(default_factory=dict)
 
-    req = APIRequest(
-        apiId="",
-        authToken="auth",
-        userInfo="userreq",
-        msgId=""
+    return asdict(
+            ReqInfo(
+            authToken=authToken,
+            userInfo=userReqInfo
+        )
     )
-    pass
-
 
 def prepare_update_payload(RequestInfo, sample_payload_path, 
                            obj_keyword, prev_response, mod_data_path):

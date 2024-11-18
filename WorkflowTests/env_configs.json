@@ -1,12 +1,8 @@
 {
     "BASE_URL" : "https://ips-demo.digit.org",
-    "HEADERS" : {"Content-Type": "application/json"},
-    "ENDPOINTS" : "endpoints.json",
+    "ENDPOINTS_PATH" : "endpoints.json",
+    "CREDENTIALS_PATH" : "credentials.json",
     "STATE" : "ca",
     "CITY" : "ca.alameda",
-    "LOGIN_HEADER": {
-        "accept": "application/json, text/plain, */*",
-        "authorization": "Basic ZWdvdi11c2VyLWNsaWVudDo=",
-        "content-type": "application/x-www-form-urlencoded"
-    }
+    "AUTHORIZATION": "Basic ZWdvdi11c2VyLWNsaWVudDo="
 }
