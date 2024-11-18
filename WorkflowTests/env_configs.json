@@ -1,5 +1,6 @@
 {
     "BASE_URL" : "https://ips-demo.digit.org",
+    "LOCAL_HOST" : "http://localhost:8082",
     "ENDPOINTS_PATH" : "endpoints.json",
     "CREDENTIALS_PATH" : "credentials.json",
     "STATE" : "ca",
