@@ -1,5 +1,7 @@
 {
-    "createTL": "/tl-services/v1/_create",
-    "updateTL": "/tl-services/v1/_update",
+    "TL": {
+        "createTL": "/tl-services/v1/_create",
+        "updateTL": "/tl-services/v1/_update"
+    },
     "login": "/user/oauth/token"
 }

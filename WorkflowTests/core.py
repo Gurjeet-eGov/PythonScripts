@@ -1,6 +1,4 @@
 import requests
-import random
-import datetime
 import json
 
 import utils

@@ -15,6 +15,26 @@ def log_response(response):
     print(f"Status Code: {response.status_code}")
     print(f"Response: {response.json()}")
 
+def generate_RequestInfo():
+    from dataclasses import dataclass, field
+    from typing import Optional, Dict
+
+    @dataclass
+    class APIRequest:
+        apiId: str
+        authToken: str
+        userInfo: dict = field(default_factory=dict)
+        msgId: Optional[str] = None
+
+    req = APIRequest(
+        apiId="",
+        authToken="auth",
+        userInfo="userreq",
+        msgId=""
+    )
+    pass
+
+
 def prepare_update_payload(RequestInfo, sample_payload_path, 
                            obj_keyword, prev_response, mod_data_path):
     """
