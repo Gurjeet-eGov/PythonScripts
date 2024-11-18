@@ -1,11 +1,12 @@
 import requests
 import json
-
+import time
 import utils
 
 class Core:
     # Configuration
     BASE_URL : str
+    LOCAL_HOST : str
     ENDPOINTS_PATH : str
     CREDENTIALS_PATH : str
     STATE : str
@@ -16,6 +17,7 @@ class Core:
     def __init__(self, module_code, env_config_path="env_configs.json"):
         env_conf = utils.read_json(env_config_path)
         self.BASE_URL = env_conf["BASE_URL"]
+        self.LOCAL_HOST = env_conf["LOCAL_HOST"]
         self.ENDPOINTS_PATH = env_conf["ENDPOINTS_PATH"]
         self.CREDENTIALS_PATH = env_conf["CREDENTIALS_PATH"]
         self.STATE = env_conf["STATE"]
@@ -35,7 +37,7 @@ class Core:
             creds = json.load(file)
         return creds[module_code][user]
 
-    def call_api(self, RequestInfo, payload, api):
+    def call_api(self, RequestInfo, payload, api, params={}, delay=3):
         """
         payload can be either string path or dictionary object
         api needs to be a string path
@@ -48,44 +50,29 @@ class Core:
 
         headers = {"Content-Type": "application/json"}
 
+        time.sleep(delay)
+
         response = requests.post(url=self.BASE_URL+api, 
                                 headers=headers, 
+                                params=params,
                                 json=payload)
         utils.log_response(response)
         return response.json()
 
     def fetch_bill(self, RequestInfo, App_ID, businessService):
-        payload = { "RequestInfo": RequestInfo}
+
         params = {
             "tenantId": self.CITY,
             "consumerCode": App_ID,
             "businessService": businessService
         }
-        response = requests.post(url = self.BASE_URL+"/billing-service/bill/v2/_fetchbill",
-                                params = params,
-                                json = payload)
-        utils.log_response(response)
-        return response.json()
 
-    def login(self, username, password, tenantId, userType):
-        payload = {
-                    "username": username,
-                    "password": password,
-                    "userType": userType,
-                    "tenantId": tenantId,
-                    "scope": "read",
-                    "grant_type": "password"
-                }
-        
-        response = requests.post(url = self.BASE_URL + self.get_endpoint("login", "User"), 
-                                headers = self.LOGIN_HEADER, 
-                                data = payload)
-        utils.log_response(response)
-        RequestInfo = utils.generate_RequestInfo(response.json()["access_token"], 
-                                                 response.json()["UserRequest"])
-        return RequestInfo
-    
-    def login_new(self, user):
+        response = self.call_api(RequestInfo, payload={}, 
+                                api="/billing-service/bill/v2/_fetchbill", 
+                                params=params)
+        return response
+
+    def login(self, user):
         payload = {
                     "username": self.get_creds(user)["username"],
                     "password": self.get_creds(user)["password"],
@@ -109,16 +96,38 @@ class Core:
                                                  response.json()["UserRequest"])
         return RequestInfo
 
+
+    def logout(self, RequestInfo):
+        payload = {
+                    "access_token": RequestInfo["authToken"],
+                    "RequestInfo": {
+                        "apiId": "",
+                        "authToken": RequestInfo["authToken"],
+                        "msgId": "1731957339904|en_IN",
+                        "plainAccessRequest": {}
+                    }
+                }
+        
+        params = {
+            "tenantId": self.STATE
+        }
+
+        response = requests.post(url = self.BASE_URL + self.get_endpoint("logout", "User"),
+                                data = payload)
+
+        print("logged out sesson of: ", RequestInfo["userInfo"]["userName"], "\n\n")
+
     def collect_fee(self, RequestInfo, fetchBillResponse):
+        
         from CollectionService import payload_builder
 
         bill_data = fetchBillResponse["Bill"][0]
         payload = payload_builder.create(bill_data, RequestInfo)
+        
         params = {
             "tenantId": self.CITY
         }
-        response = requests.post(url=self.BASE_URL+"/collection-services/payments/_create", 
-                                params=params,
-                                json=payload)
-        
-        utils.log_response(response)
+
+        response = self.call_api(RequestInfo, payload, 
+                                "/collection-services/payments/_create", 
+                                params)
