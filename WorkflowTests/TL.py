@@ -121,6 +121,3 @@ def NewTL_mod(epoch_key, epoch_value):
 
     # logout CSR
     TL_obj.logout(csr_login_RequestInfo)
-
-for epoch in utils.randomize_epoch(1711909800000, 1730399400000, 10):
-    NewTL_mod("createdTime", epoch)
