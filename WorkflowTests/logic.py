@@ -37,7 +37,7 @@ class Core:
             creds = json.load(file)
         return creds[module_code][user]
 
-    def call_api(self, RequestInfo, payload, api, params={}, delay=3):
+    def call_api(self, RequestInfo, payload, api, params={}, delay=2):
         """
         payload can be either string path or dictionary object
         api needs to be a string path
@@ -59,10 +59,10 @@ class Core:
         utils.log_response(response)
         return response.json()
 
-    def fetch_bill(self, RequestInfo, App_ID, businessService):
-
+    def fetch_bill(self, RequestInfo, App_ID, businessService, tenantId=None):
+        tenantId = tenantId or self.CITY
         params = {
-            "tenantId": self.CITY,
+            "tenantId": tenantId,
             "consumerCode": App_ID,
             "businessService": businessService
         }
@@ -96,7 +96,6 @@ class Core:
                                                  response.json()["UserRequest"])
         return RequestInfo
 
-
     def logout(self, RequestInfo):
         payload = {
                     "access_token": RequestInfo["authToken"],
@@ -115,17 +114,17 @@ class Core:
         response = requests.post(url = self.BASE_URL + self.get_endpoint("logout", "User"),
                                 data = payload)
 
-        print("logged out sesson of: ", RequestInfo["userInfo"]["userName"], "\n\n")
+        # print("logged out sesson of: ", RequestInfo["userInfo"]["userName"], "\n\n")
 
-    def collect_fee(self, RequestInfo, fetchBillResponse):
-        
+    def collect_fee(self, RequestInfo, fetchBillResponse, tenantId=None):
+        tenantId = tenantId or self.CITY
         from CollectionService import payload_builder
 
         bill_data = fetchBillResponse["Bill"][0]
         payload = payload_builder.create(bill_data, RequestInfo)
         
         params = {
-            "tenantId": self.CITY
+            "tenantId": tenantId
         }
 
         response = self.call_api(RequestInfo, payload, 

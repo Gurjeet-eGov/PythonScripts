@@ -11,7 +11,7 @@ headers = {
 }
 
 # List of tenant IDs
-tenant_ids = ["ca.alameda","ca.albany","ca.berkeley","ca.dublin","ca.emeryville","ca.fremont","ca.hayward","ca.livermore","ca.newark","ca.oakland","ca.piedmont","ca.pleasanton","ca.sanleandro","ca.unioncity","ca.losangeles","ca.longbeach","ca.glendale","ca.santaclarita","ca.lancaster","ca.palmdale","ca.pomona","ca.torrance","ca.pasadena","ca.elmonte","ca.downey","ca.inglewood","ca.westcovina","ca.norwalk","ca.anaheim","ca.brea","ca.buenapark","ca.costamesa","ca.cypress","ca.danapoint","ca.fountainvalley","ca.fullerton","ca.gardengrove","ca.huntingtonbeach","ca.irvine","ca.lagunabeach","ca.lagunaniguel","ca.sandiego","ca.carlsbad","ca.chulavista","ca.coronado","ca.delmar","ca.elcajon","ca.encinitas","ca.escondido","ca.imperialbeach","ca.lamesa","ca.lemongrove","ca.nationalcity","ca.oceanside","ca.poway","ca.sanjose","ca.cupertino","ca.gilroy","ca.losaltos","ca.losgatos","ca.milpitas","ca.montesereno","ca.morganhill","ca.mountainview","ca.paloalto","ca.santaclara","ca.saratoga","ca.sunnyvale","ca.sacramento","ca.citrusheights","ca.elkgrove","ca.folsom","ca.galt","ca.isleton","ca.ranchocordova"]  # Add all tenant IDs here
+tenant_ids = ["ke.nairobi","ke.mombasa","ke.kisumu","ke.nakuru","ke.uasin gishu"]  # Add all tenant IDs here
 
 # Base request payload
 base_payload = {
@@ -30,86 +30,86 @@ base_payload = {
                 {
                     "name": "Super User",
                     "code": "SUPERUSER",
-                    "tenantId": "ca"
+                    "tenantId": "ke"
                 }
             ],
             "active": True,
-            "tenantId": "ca",
+            "tenantId": "ke",
             "permanentCity": None
         }
     },
     "billingSlab": [
-        {
-            "tenantId": "",
-            "licenseType": "PERMANENT",
-            "applicationType": "RENEWAL",
-            "structureType": "IMMOVABLE.PUCCA",
-            "tradeType": None,
-            "accessoryCategory": "ACC-1",
-            "type": "FLAT",
-            "uom": "GROSSUNITS",
-            "fromUom": "0",
-            "toUom": "10000",
-            "rate": "200"
-        },
-        {
-            "tenantId": "",
-            "licenseType": "PERMANENT",
-            "applicationType": "RENEWAL",
-            "structureType": "IMMOVABLE.PUCCA",
-            "tradeType": None,
-            "accessoryCategory": "ACC-2",
-            "type": "FLAT",
-            "uom": "GROSSUNITS",
-            "fromUom": "0",
-            "toUom": "10000",
-            "rate": "200"
-        },
-        {
-            "tenantId": "",
-            "licenseType": "PERMANENT",
-            "applicationType": "RENEWAL",
-            "structureType": "IMMOVABLE.PUCCA",
-            "tradeType": None,
-            "accessoryCategory": "ACC-3",
-            "type": "FLAT",
-            "uom": "GROSSUNITS",
-            "fromUom": "0",
-            "toUom": "10000",
-            "rate": "200"
-        },
-        {
-            "tenantId": "",
-            "licenseType": "PERMANENT",
-            "applicationType": "RENEWAL",
-            "structureType": "IMMOVABLE.PUCCA",
-            "tradeType": None,
-            "accessoryCategory": "ACC-4",
-            "type": "FLAT",
-            "uom": "GROSSUNITS",
-            "fromUom": "0",
-            "toUom": "10000",
-            "rate": "200"
-        },
-        {
-            "tenantId": "",
-            "licenseType": "PERMANENT",
-            "applicationType": "RENEWAL",
-            "structureType": "IMMOVABLE.PUCCA",
-            "tradeType": None,
-            "accessoryCategory": "ACC-5",
-            "type": "FLAT",
-            "uom": "GROSSUNITS",
-            "fromUom": "0",
-            "toUom": "10000",
-            "rate": "200"
-        }
-    ]
+  {
+    "tenantId": "",
+    "licenseType": "PERMANENT",
+    "applicationType": "NEW",
+    "structureType": "MOVABLE.MDV",
+    "tradeType": None,
+    "accessoryCategory": "ACC-1",
+    "type": "FLAT",
+    "uom": "GROSSUNITS",
+    "fromUom": "0",
+    "toUom": "10000",
+    "rate": "200"
+  },
+  {
+    "tenantId": "",
+    "licenseType": "PERMANENT",
+    "applicationType": "NEW",
+    "structureType": "MOVABLE.MDV",
+    "tradeType": None,
+    "accessoryCategory": "ACC-2",
+    "type": "FLAT",
+    "uom": "GROSSUNITS",
+    "fromUom": "0",
+    "toUom": "10000",
+    "rate": "200"
+  },
+  {
+    "tenantId": "",
+    "licenseType": "PERMANENT",
+    "applicationType": "NEW",
+    "structureType": "MOVABLE.MDV",
+    "tradeType": None,
+    "accessoryCategory": "ACC-3",
+    "type": "FLAT",
+    "uom": "GROSSUNITS",
+    "fromUom": "0",
+    "toUom": "10000",
+    "rate": "200"
+  },
+  {
+    "tenantId": "",
+    "licenseType": "PERMANENT",
+    "applicationType": "NEW",
+    "structureType": "MOVABLE.MDV",
+    "tradeType": None,
+    "accessoryCategory": "ACC-4",
+    "type": "FLAT",
+    "uom": "GROSSUNITS",
+    "fromUom": "0",
+    "toUom": "10000",
+    "rate": "200"
+  },
+  {
+    "tenantId": "",
+    "licenseType": "PERMANENT",
+    "applicationType": "NEW",
+    "structureType": "MOVABLE.MDV",
+    "tradeType": None,
+    "accessoryCategory": "ACC-5",
+    "type": "FLAT",
+    "uom": "GROSSUNITS",
+    "fromUom": "0",
+    "toUom": "10000",
+    "rate": "200"
+  }
+]
 }
 
 # Loop through each tenant ID and send the POST request
 for tenant_id in tenant_ids:
-    # Create a new payload for each tenant to avoid modifying the original
+    # Create a NEW payload for each tenant to avoid modifying the original
     payload = base_payload.copy()
     
     # Update the tenantId for each billing slab entry

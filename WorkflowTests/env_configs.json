@@ -3,7 +3,7 @@
     "LOCAL_HOST" : "http://localhost:8082",
     "ENDPOINTS_PATH" : "endpoints.json",
     "CREDENTIALS_PATH" : "credentials.json",
-    "STATE" : "ca",
-    "CITY" : "ca.alameda",
+    "STATE" : "ke",
+    "CITY" : "ke.kisumu",
     "AUTHORIZATION": "Basic ZWdvdi11c2VyLWNsaWVudDo="
 }

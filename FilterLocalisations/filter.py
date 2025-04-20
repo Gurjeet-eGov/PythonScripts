@@ -3,9 +3,9 @@ import requests
 from collections import defaultdict
 
 # Define URL and file paths
-url = "http://localhost:8082/localization/messages/v1/_search?locale=en_IN&tenantId=ca"
-localisation_file = "FilterLocalisations/localisations.json"
-keyword = "Bottom 3 performing states"
+url = "http://localhost:8082/localization/messages/v1/_search?locale=en_IN&tenantId=pg"
+localisation_file = "localisations.json"
+keyword = "There are no Active Surveys at the moment."
 
 # Function to fetch localization messages
 def fetchMessages():
@@ -86,13 +86,13 @@ def main():
     grouped_case_sensitive = group_by_module(case_sensitive_results)
 
     # Save grouped results to separate JSON files for each filter type
-    with open("FilterLocalisations/grouped_exact_match.json", "w") as output_file:
+    with open("grouped_exact_match.json", "w") as output_file:
         json.dump(grouped_exact_match, output_file, indent=4)
     
-    with open("FilterLocalisations/grouped_case_insensitive.json", "w") as output_file:
+    with open("grouped_case_insensitive.json", "w") as output_file:
         json.dump(grouped_case_insensitive, output_file, indent=4)
 
-    with open("FilterLocalisations/grouped_case_sensitive.json", "w") as output_file:
+    with open("grouped_case_sensitive.json", "w") as output_file:
         json.dump(grouped_case_sensitive, output_file, indent=4)
 
     print("Grouped results saved to JSON files for each filter type.")

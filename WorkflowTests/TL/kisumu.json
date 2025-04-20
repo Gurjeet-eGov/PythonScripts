@@ -1,0 +1,62 @@
+{
+    "Licenses": [
+      {
+        "action": "INITIATE",
+        "applicationType": "NEW",
+        "workflowCode": "NewTL",
+        "commencementDate": 1741112999000,
+        "financialYear": "2024-25",
+        "licenseType": "PERMANENT",
+        "tenantId": "ke.kisumu",
+        "tradeName": "TEST TRADE",
+        "wfDocuments": [],
+        "tradeLicenseDetail": {
+          "channel": "COUNTER",
+          "additionalDetail": {
+            "propertyId": "KE-PT-2025-03-04-002361",
+            "isSameAsPropertyOwner": "true"
+          },
+          "accessories": [
+            {
+              "accessoryCategory": "ACC-1",
+              "uom": "GROSSUNITS",
+              "count": 10,
+              "uomValue": 10
+            }
+          ],
+          "tradeUnits": [
+            {
+              "tradeType": "GOODS.HEALTHCARE.DENTALLABSERVICES",
+              "uom": "GROSSUNITS",
+              "uomValue": 10
+            }
+          ],
+          "owners": [
+            {
+              "dob": null,
+              "fatherOrHusbandName": "Dennis",
+              "gender": "MALE",
+              "mobileNumber": 9999009999,
+              "name": "Mike",
+              "permanentAddress": " Maseno, Kisumu, ",
+              "relationship": "FATHER",
+              "ownerType": "DISABLEINDIVIDUALS"
+            }
+          ],
+          "address": {
+            "city": "Kisumu",
+            "locality": {
+              "code": "LA001"
+            },
+            "doorNo": "HN 123",
+            "street": "ST 123"
+          },
+          "structureType": "IMMOVABLE.PUCCA",
+          "subOwnerShipCategory": "INDIVIDUAL_SINGLEOWNER.FEE_SIMPLE_OWNERSHIP"
+        }
+      }
+    ],
+    "RequestInfo": {
+      
+    }
+  }
