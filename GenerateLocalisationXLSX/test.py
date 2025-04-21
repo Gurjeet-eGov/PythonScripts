@@ -1,6 +1,7 @@
 import json
 import csv
 
+"""get list of unique localization codes (only codes list)"""
 # Read JSON file
 with open("localizations.json", "r", encoding="utf-8") as file:
     data = json.load(file)
