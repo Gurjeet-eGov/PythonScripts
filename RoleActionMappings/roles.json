@@ -1,6 +1,7 @@
 [
   {
-    "code": "TL_CEMP",
-    "name": "TL Counter Employee"
+    "code": "CEMP",
+    "name": "Counter Employee",
+    "description": "Employee at the counter who performs assessment on behalf of citizen"
   }
 ]

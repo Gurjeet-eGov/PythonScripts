@@ -1,22 +1,22 @@
 {
-    "action": "APPLY",
-    "tradeLicenseDetail": {
-      "applicationDocuments": [
-        {
-          "documentType": "OWNERIDPROOF",
-          "fileStoreId": "71c0a113-1962-4e9b-bf0d-a17278f4e8ea",
-          "tenantId": "ca.alameda"
-        },
-        {
-          "documentType": "OWNERSHIPPROOF",
-          "fileStoreId": "c1e6cd88-23eb-4894-b2d8-5ac0128ccca0",
-          "tenantId": "ca.alameda"
-        },
-        {
-          "documentType": "OWNERPHOTO",
-          "fileStoreId": "6a4a7837-1cee-49e6-bb63-9d21b9b9a199",
-          "tenantId": "ca.alameda"
-        }
-      ]
-    }
+  "action": "APPLY",
+  "tradeLicenseDetail": {
+    "applicationDocuments": [
+      {
+        "documentType": "OWNERIDPROOF",
+        "fileStoreId": "8627a218-1199-4158-a973-033171f6b403",
+        "tenantId": "ke.kisumu"
+      },
+      {
+        "documentType": "OWNERSHIPPROOF",
+        "fileStoreId": "60be59be-62aa-4488-bc6f-6f61c054d5d0",
+        "tenantId": "ke.kisumu"
+      },
+      {
+        "documentType": "OWNERPHOTO",
+        "fileStoreId": "171b3c22-5f91-4305-b0f6-8320615d9046",
+        "tenantId": "ke.kisumu"
+      }
+    ]
   }
+}

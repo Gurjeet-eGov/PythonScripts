@@ -1,0 +1,61 @@
+{
+    "Licenses": [
+      {
+        "action": "INITIATE",
+        "applicationType": "NEW",
+        "commencementDate": 640808999000,
+        "financialYear": "2024-25",
+        "licenseType": "PERMANENT",
+        "tenantId": "ca.berkeley",
+        "tradeLicenseDetail": {
+          "channel": "COUNTER",
+          "address": {
+            "city": "Berkeley",
+            "locality": {
+              "code": "ALM003"
+            },
+            "tenantId": "ca.berkeley",
+            "pincode": null,
+            "doorNo": "HN 123",
+            "street": "ST 123",
+            "landmark": "LNDMRK"
+          },
+          "noOfEmployees": "100",
+          "operationalArea": "2000",
+          "applicationDocuments": null,
+          "accessories": null,
+          "owners": [
+            {
+              "mobileNumber": "6100000010",
+              "name": "Dennis",
+              "fatherOrHusbandName": "Harry",
+              "relationship": "FATHER",
+              "dob": null,
+              "gender": "MALE",
+              "permanentAddress": "HN 123,  ST 123, LNDMRK, CA_BERKELEY_REVENUE_ALM003, Berkeley, ",
+              "emailId": null
+            }
+          ],
+          "structureType": "IMMOVABLE.PUCCA",
+          "subOwnerShipCategory": "INDIVIDUAL_SINGLEOWNER.FEE_SIMPLE_OWNERSHIP",
+          "tradeUnits": [
+            {
+              "tradeType": "GOODS.AUTOMOTIVE.AUTOPARTSRETAIL",
+              "uom": "GROSSUNITS",
+              "uomValue": "5"
+            }
+          ],
+          "additionalDetail": {
+            "propertyId": "CA-PT-2024-11-19-002350",
+            "isSameAsPropertyOwner": "true",
+            "tradeGstNo": "ABCDE1111A"
+          }
+        },
+        "tradeName": "Test Trade",
+        "wfDocuments": [],
+        "applicationDocuments": [],
+        "workflowCode": "NewTL"
+      }
+    ],
+    "RequestInfo": {}
+  }

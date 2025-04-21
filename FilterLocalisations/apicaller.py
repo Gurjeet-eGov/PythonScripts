@@ -3,7 +3,7 @@ import requests
 import os
 
 # Directory containing JSON files
-directory = "FilterLocalisations"
+directory = "."
 url = "http://localhost:8082/localization/messages/v1/_upsert"
 
 # Headers for the request
@@ -24,12 +24,12 @@ request_info = {
     "userInfo": {"id":9421,"uuid":"3709110a-4b1d-49a4-b639-95b689a86aa5",
                  "userName":"SUPERSU1", "name":"Jason","mobileNumber":"9999009900",
                  "emailId":None,"locale":None,"type":"EMPLOYEE",
-                 "roles":[{"name":"Super User","code":"SUPERUSER","tenantId":"ca"}],
-                 "active":True,"tenantId":"ca","permanentCity":None}
+                 "roles":[{"name":"Super User","code":"SUPERUSER","tenantId":"as"}],
+                 "active":True,"tenantId":"as","permanentCity":None}
 }
 
 # Tenant ID
-tenant_id = "ca"
+tenant_id = "pg"
 
 # List JSON files in the directory
 json_files = [f for f in os.listdir(directory) if f.endswith('.json')]

@@ -1,0 +1,151 @@
+{
+    "type": "object",
+    "allOf": [
+        {
+            "if": {
+                "required": [
+                    "connectionType"
+                ],
+                "properties": {
+                    "connectionType": {
+                        "const": "Metered"
+                    }
+                }
+            },
+            "then": {
+                "required": [
+                    "slabs"
+                ],
+                "properties": {
+                    "minimumCharge": false,
+                    "calculationAttribute": {
+                        "enum": [
+                            "Water consumption"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "required": [
+                    "connectionType"
+                ],
+                "properties": {
+                    "connectionType": {
+                        "const": "Non_Metered"
+                    }
+                }
+            },
+            "then": {
+                "required": [
+                    "minimumCharge"
+                ],
+                "properties": {
+                    "slabs": false,
+                    "calculationAttribute": {
+                        "enum": [
+                            "Flat"
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "title": "Generated schema for Root",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "required": [
+        "id",
+        "buildingType",
+        "calculationAttribute",
+        "connectionType"
+    ],
+    "x-unique": [
+        "id",
+        "buildingType",
+        "connectionType",
+        "calculationAttribute"
+    ],
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "slabs": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "from",
+                    "to",
+                    "charge"
+                ],
+                "properties": {
+                    "to": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "from": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "charge": {
+                        "type": "number",
+                        "minimum": 0
+                    }
+                },
+                "x-ui-schema": {
+                    "ui:order": [
+                        "from",
+                        "to",
+                        "charge"
+                    ]
+                }
+            }
+        },
+        "buildingType": {
+            "enum": [
+                "RESIDENTIAL",
+                "COMMERCIAL",
+                "NONRESIDENTIAL",
+                "Commercial and Government",
+                "Partly Commercial",
+                "Government",
+                "MIXED",
+                "PUBLICSECTOR",
+                "Commercial"
+            ],
+            "type": "string"
+        },
+        "minimumCharge": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "connectionType": {
+            "enum": [
+                "Metered",
+                "Non_Metered",
+                ""
+            ],
+            "type": "string"
+        },
+        "calculationAttribute": {
+            "enum": [
+                "Flat",
+                "Water consumption",
+                "No. of taps",
+                "Pipe Size"
+            ],
+            "type": "string"
+        }
+    },
+    "x-ui-schema": {
+        "ui:order": [
+            "id",
+            "buildingType",
+            "connectionType",
+            "calculationAttribute",
+            "minimumCharge",
+            "slabs"
+        ]
+    }
+}

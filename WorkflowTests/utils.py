@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 # Configure logging
 logging.basicConfig(
     filename='response_log.txt',  # Log file name
+    filemode='w',
     level=logging.INFO,           # Set logging level to INFO (or DEBUG for more detailed logs)
     format='%(asctime)s - %(message)s',  # Log format with timestamp
 )
@@ -25,13 +26,10 @@ def randomize_epoch(from_epoch, to_epoch, count):
     :param count: Number of random epochs to generate.
     :return: List of random epoch timestamps.
     """
-    # Epoch timestamps in milliseconds
-    from_epoch_ms = 1672531200000  # 2023-01-01
-    to_epoch_ms = 1703980800000    # 2023-12-31
-
+    
     # Convert to seconds for datetime
-    from_epoch = from_epoch_ms / 1000
-    to_epoch = to_epoch_ms / 1000
+    from_epoch = from_epoch / 1000
+    to_epoch = to_epoch / 1000
 
     # Convert to datetime
     start_date = datetime.fromtimestamp(from_epoch)
@@ -41,7 +39,7 @@ def randomize_epoch(from_epoch, to_epoch, count):
     all_days = [start_date + timedelta(days=i) for i in range((end_date - start_date).days + 1)]
 
     # Convert back to milliseconds
-    random_days = random.sample(all_days, k=5)
+    random_days = random.sample(all_days, k=count)
     random_epochs_ms = [int(day.timestamp() * 1000) for day in random_days]
     
     # Convert selected dates to epoch timestamps (defaulting to midnight)

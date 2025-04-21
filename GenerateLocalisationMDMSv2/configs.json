@@ -1,8 +1,8 @@
 {
     "Environment": {
       "host": "https://egov-sandbox.niua.org",
-      "localhost": "http://localhost:8082/",
-      "stateCode": "pg",
+      "localhost": "http://localhost:8083/",
+      "stateCode": "as",
       "cityCode": "citya",
       "auth_header": {
         "authorization": "Basic ZWdvdi11c2VyLWNsaWVudDo="

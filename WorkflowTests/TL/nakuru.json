@@ -1,0 +1,57 @@
+{
+    "Licenses": [
+      {
+        "action": "INITIATE",
+        "applicationType": "NEW",
+        "commencementDate": 1707523200000,
+        "financialYear": "2024-25",
+        "licenseType": "PERMANENT",
+        "tenantId": "ke.nakuru",
+        "tradeLicenseDetail": {
+          "channel": "COUNTER",
+          "address": {
+            "city": "Nakuru",
+            "locality": {
+              "code": "LA002"
+            },
+            "doorNo": "HN 123",
+            "street": "ST 123"
+          },
+          "noOfEmployees": null,
+          "operationalArea": null,
+          "applicationDocuments": null,
+          "accessories": null,
+          "owners": [
+            {
+              "dob": null,
+              "fatherOrHusbandName": "Markus",
+              "gender": "MALE",
+              "mobileNumber": 9999009999,
+              "name": "Dennis",
+              "permanentAddress": "HN 123,  ST 123, TST LNDMRK, Gilgil, Nakuru, ",
+              "relationship": "FATHER",
+              "ownerType": "DISABLEINDIVIDUALS"
+            }
+          ],
+          "structureType": "IMMOVABLE.PUCCA",
+          "subOwnerShipCategory": "INDIVIDUAL_SINGLEOWNER.FEE_SIMPLE_OWNERSHIP",
+          "tradeUnits": [
+            {
+              "tradeType": "GOODS.RETAIL.ELECTRONICSRETAIL",
+              "uom": "GROSSUNITS",
+              "uomValue": 10
+            }
+          ],
+          "additionalDetail": {
+            "propertyId": "KE-PT-2025-03-04-002362",
+            "isSameAsPropertyOwner": "true"
+          }
+        },
+        "tradeName": "TEST TRADE",
+        "wfDocuments": [],
+        "applicationDocuments": [],
+        "workflowCode": "NewTL"
+      }
+    ],
+    "RequestInfo": {}
+  }

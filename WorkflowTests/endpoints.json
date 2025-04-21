@@ -1,7 +1,8 @@
 {
     "TL": {
         "create": "/tl-services/v1/_create",
-        "update": "/tl-services/v1/_update"
+        "update": "/tl-services/v1/_update",
+        "search": "/tl-services/v1/_search"
     },
     "User": {
         "login": "/user/oauth/token",
