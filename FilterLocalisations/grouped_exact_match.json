@@ -1,9 +1,17 @@
 {
-    "rainmaker-engagement": [
+    "rainmaker-fsm": [
         {
-            "code": "CS_NO_ACTIVE_SURVEYS",
-            "message": "There are no active surveys at the moment.",
-            "module": "rainmaker-engagement",
+            "code": "ES_FSM_REGISTRY_NEW_RELATIONSHIP",
+            "message": "Relationship",
+            "module": "rainmaker-fsm",
+            "locale": "en_IN"
+        }
+    ],
+    "rainmaker-hr": [
+        {
+            "code": "HR_RELATIONSHIP_LABEL",
+            "message": "Relationship",
+            "module": "rainmaker-hr",
             "locale": "en_IN"
         }
     ]

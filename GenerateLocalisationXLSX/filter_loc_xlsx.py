@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # Load the JSON data
-input_file = "localizations.json"
+input_file = "unified-qa_lov.json"
 output_file = "modules.xlsx"
 
 # Read the input JSON file

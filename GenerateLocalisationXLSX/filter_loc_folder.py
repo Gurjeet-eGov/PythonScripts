@@ -3,7 +3,7 @@ from collections import defaultdict
 from pathlib import Path
 
 # Load the JSON data
-input_file = "localizations.json"
+input_file = "localisations.json"
 output_dir = "filtered_modules"
 
 # Create an output directory if it doesn't exist
